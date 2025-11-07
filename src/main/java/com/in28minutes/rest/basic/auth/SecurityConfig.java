@@ -21,7 +21,7 @@ import javax.crypto.spec.SecretKeySpec;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    private static final String SECRET_KEY = null;
+
 
 //    @Bean
 //    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
@@ -39,11 +39,11 @@ public class SecurityConfig {
 //        return http.build();
 //    }
 
-    @Bean
-    JwtDecoder jwtDecoder() {
-        return NimbusJwtDecoder.withSecretKey(
-                new SecretKeySpec(SECRET_KEY.getBytes(), "HmacSHA256")).build();
-    }
+//    @Bean
+//    JwtDecoder jwtDecoder() {
+//        return NimbusJwtDecoder.withSecretKey(
+//                new SecretKeySpec(SECRET_KEY.getBytes(), "HmacSHA256")).build();
+//    }
 
 //    @Bean
 //    public PasswordEncoder passwordEncoder() {

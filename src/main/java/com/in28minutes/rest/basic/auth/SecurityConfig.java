@@ -21,7 +21,7 @@ import javax.crypto.spec.SecretKeySpec;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    private static final String SECRET_KEY = "mysupersecretkeythatissafetoencode123456";
+    private static final String SECRET_KEY = null;
 
 //    @Bean
 //    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
